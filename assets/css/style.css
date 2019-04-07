@@ -4,6 +4,7 @@ body {
   line-height: 34px;
   color: #777777;
   background: url("../images/concrete_seamless.png");
+  margin: 0px;
 }
 
 * {
@@ -54,6 +55,8 @@ h3 {
 
 #masthead {
   position: fixed;
+  top: 0px;
+  left: 0px;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -99,7 +102,7 @@ nav a:first-child {
 /* footer */
 
 footer {
-  padding: 30px 0;
+
   clear: both;
   font-size: 12px;
   color: #ffffff;
@@ -124,6 +127,15 @@ h3, h2 {
   min-height: calc(100vh - 70px);
 }
 
+.main-section-contact {
+  float: left;
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
 .main-section {
   float: left;
   width: 100%;
@@ -133,6 +145,7 @@ h3, h2 {
   background: #ffffff;
   border: 1px solid #dddddd;
 }
+
 
 /* portfolio page */
 
@@ -258,7 +271,7 @@ input[type=submit] {
   nav {
 
   }
-}
+} 
 
 
 @media screen and (max-width: 640px) {
@@ -285,13 +298,35 @@ input[type=submit] {
   #main-container {
     padding-top: 0px;
     width: 100%;
+  
   }  
   #logo {
     width: 100%;
+    
 }
   h1 {
     text-align: left;
   }
 
+  .main-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+  }
 
-}
+  /* .main-section-contact {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+
+  } */
+
+  .work:nth-child(even) {
+    margin-right: 0px;
+  }
+
+
+} 
